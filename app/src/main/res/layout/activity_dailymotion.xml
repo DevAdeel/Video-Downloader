@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DailyMotion">
+
+    <EditText
+        android:id="@+id/input_DailymotionURL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter Dailymotion Video URL"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_dailymotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/input_DailymotionURL"
+        app:layout_constraintTop_toBottomOf="@+id/input_DailymotionURL">
+
+        <RadioButton
+            android:id="@+id/rbtn_144"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="144p" />
+
+        <RadioButton
+            android:id="@+id/rbtn_240"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="240p" />
+
+        <RadioButton
+            android:id="@+id/rbtn_380"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="380p" />
+
+        <RadioButton
+            android:id="@+id/rbtn_480"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="480p" />
+
+        <RadioButton
+            android:id="@+id/rbtn_720"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="720p" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_downloadDailymotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Download"
+        app:layout_constraintEnd_toEndOf="@+id/input_DailymotionURL"
+        app:layout_constraintStart_toStartOf="@+id/radiogroup_dailymotion"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup_dailymotion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
