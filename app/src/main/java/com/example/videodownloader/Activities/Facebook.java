@@ -21,7 +21,6 @@ public class Facebook extends AppCompatActivity {
 
         inputURl = findViewById(R.id.input_FbURL);
         BtnDownload = findViewById(R.id.btn_downloadFbVideo);
-        final String URL = inputURl.getText().toString();
 
         BtnDownload.setOnClickListener(new View.OnClickListener() {
             @Override
